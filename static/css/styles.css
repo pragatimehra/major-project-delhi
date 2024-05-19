@@ -1,0 +1,232 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    /* background-image: url('../static/images/Firefly a photo of safdarjung tomb, delhi in full hd which can be used for background, in landscape .jpg'); */
+    background-image: linear-gradient(to right top, #000000, #2a1e6b, #2c2055, #48318d, #2d2270);
+    background-size: cover;
+    background-position: center;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.main-title {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 70px;
+}
+
+.sub-title {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+.toggle,
+.atm,
+.security,
+.car,
+.lift {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.toggle-switch,
+.atm-switch,
+.security-switch,
+.car-switch,
+.lift-switch {
+    display: inline-block;
+    background: #9f91cd;
+    border-radius: 16px;
+    width: 58px;
+    height: 32px;
+    position: relative;
+    vertical-align: middle;
+    transition: background 0.25s;
+}
+
+.toggle-switch:before,
+.toggle-switch:after,
+.atm-switch:before,
+.atm-switch:after,
+.security-switch:before,
+.security-switch:after,
+.car-switch:before,
+.car-switch:after,
+.lift-switch:before,
+.lift-switch:after {
+    content: "";
+}
+
+.toggle-switch:before,
+.atm-switch:before,
+.security-switch:before,
+.car-switch:before,
+.lift-switch:before {
+    display: block;
+    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: left 0.25s;
+}
+
+.toggle:hover .toggle-switch:before,
+.atm:hover .atm-switch:before,
+.security:hover .security-switch:before,
+.car:hover .car-switch:before,
+.lift:hover .lift-switch:before {
+    background: linear-gradient(to bottom, #fff 0%, #fff 100%);
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+}
+
+.toggle-checkbox:checked+.toggle-switch,
+.atm-checkbox:checked+.atm-switch,
+.security-checkbox:checked+.security-switch,
+.car-checkbox:checked+.car-switch,
+.lift-checkbox:checked+.lift-switch {
+    background: #5441cd;
+}
+
+.toggle-checkbox:checked+.toggle-switch:before,
+.atm-checkbox:checked+.atm-switch:before,
+.security-checkbox:checked+.security-switch:before,
+.car-checkbox:checked+.car-switch:before,
+.lift-checkbox:checked+.lift-switch:before {
+    left: 30px;
+}
+
+.toggle-checkbox,
+.atm-checkbox,
+.security-checkbox,
+.car-checkbox,
+.lift-checkbox {
+    position: absolute;
+    visibility: hidden;
+}
+
+.toggle-label,
+.atm-label,
+.security-label,
+.car-label,
+.lift-label {
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+}
+
+/* Dealers Button */
+
+.show-dealers-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+}
+
+.show-dealers-button:hover {
+    background-color: #45a049;
+}
+
+/* Deaalers Modal */
+
+/* Basic modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    animation: modalOpen 0.4s;
+}
+
+/* Keyframes for modal open animation */
+@keyframes modalOpen {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Close button styling */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    transition: color 0.3s;
+    /* Smooth transition for color */
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Styling for the modal header */
+.modal-content h2 {
+    margin-top: 0;
+    border-bottom: 2px solid #eee;            
+    padding-bottom: 10px;            
+    color: #333;
+}
+
+/* Styling for the dealers list */
+#propertyDealersList {
+    margin-top: 20px;
+}
+
+#propertyDealersList li {
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s;
+}
+
+#propertyDealersList li:hover {
+    background-color: #f9f9f9;
+}
