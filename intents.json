@@ -1,0 +1,133 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "Is anyone there?",
+          "Hello"
+        ],
+        "responses": [
+          "Hey! How can I help you?",
+          "Hi there, what can I do for you?",
+          "Hi, how can I help?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": [
+          "See you later, thanks for visiting",
+          "Have a nice day!",
+          "Bye! Come back again soon."
+        ]
+      },
+      {
+        "tag": "time",
+        "patterns": [
+          "When is the right time to buy a house in Delhi?"
+        ],
+        "responses": [
+          "The right time to buy a house in Delhi depends on various factors such as market conditions, your financial situation, and your long-term goals."
+        ]
+      },
+      {
+        "tag": "what",
+        "patterns": [
+          "What all things to consider before buying a house in Delhi?",
+          "What factors should I consider before buying a house in Delhi?"
+        ],
+        "responses": [
+          "Buying a house in Delhi depends on your preferences, budget, and the current real estate market."
+        ]
+      },
+      {
+        "tag": "buy",
+        "patterns": [
+            "Which location is best to buy in Delhi?",
+            "Which location in Delhi is budget-friendly?",
+            "Where should I buy a house in Delhi?"
+        ],
+        "responses": [
+            "To find the best location to buy a house in Delhi, consider factors such as connectivity, amenities, and future prospects.",
+            "There are several budget-friendly locations in Delhi such as [list of locations]. It's recommended to explore various options and consult with real estate experts.",
+            "Choosing the right location to buy a house in Delhi depends on your preferences, budget, and specific requirements. Talk to our property dealers to seek professional advice."
+        ]
+      },
+      {
+        "tag": "delhi",
+        "patterns": [
+          "Tell me about Delhi",
+          "What are some attractions in Delhi?",
+          "Why choose Delhi for buying a house?",
+          "What makes Delhi a good place to live?",
+          "Why should I buy a house in Delhi?",
+          "Why should I live in Delhi?"
+        ],
+        "responses": [
+          "Delhi, the capital city of India, is known for its rich history, diverse culture, and vibrant lifestyle. Some popular attractions in Delhi include the Red Fort, Qutub Minar, India Gate, and Lotus Temple.",
+          "Delhi offers a wide range of housing options, excellent infrastructure, educational institutions, healthcare facilities, and job opportunities, making it an attractive destination for homebuyers.",
+          "Delhi's strategic location, cosmopolitan atmosphere, and blend of modernity with tradition make it an ideal place to live for people from all walks of life."
+        ]
+      },
+      {
+        "tag": "dealers",
+        "patterns": [
+          "Can you provide some property dealers' contacts in Delhi?",
+          "I need contacts of property dealers in Delhi.",
+          "Where can I find property dealers in Delhi?",
+          "Provide contacts of some property dealers?",
+          "I don't know any property dealers in Delhi"
+        ],
+        "responses": [
+          "Here are some property dealers' contacts in Delhi:\n1. Mohit Tiwari - Contact: 9876543210\n2. Naman Gaur - Contact: 8765432190\n3. Pragati Mehra - Contact: 7654321980\n4. Suyash Tyagi - Contact: 6543219870\n5. Swaagatam Team - Contact: 9999999999",
+          "Here are a few property dealers you can contact in Delhi:\n1. Mohit Tiwari - Contact: 9876543210\n2. Naman Gaur - Contact: 8765432190\n3. Pragati Mehra - Contact: 7654321980\n4. Suyash Tyagi - Contact: 6543219870\n5. Swaagatam Team - Contact: 9999999999",
+          "You can reach out to our property dealers in Delhi for assistance:\n1. Mohit Tiwari - Contact: 9876543210\n2. Naman Gaur - Contact: 8765432190\n3. Pragati Mehra - Contact: 7654321980\n4. Suyash Tyagi - Contact: 6543219870\n5. Swaagatam Team - Contact: 9999999999"
+        ]
+      },
+      {
+        "tag": "loan",
+        "patterns": [
+          "Can I get a loan for buying a house in Delhi?",
+          "I don't have full amount to buy home in Delhi."
+        ],
+        "responses": [
+          "Various banks and financial institutions offer home loans for buying a house in Delhi. You can explore different loan options, compare interest rates, and choose a suitable financing option."
+        ]
+      },
+      {
+        "tag": "property prices",
+        "patterns": [
+          "What are the property prices in Delhi?"
+        ],
+        "responses": [
+          "Property prices in Delhi vary depending on the location, type of property, and market conditions. It's recommended to research recent trends and consult with real estate experts for accurate information."
+        ]
+      },
+      {
+        "tag": "real estate",
+        "patterns": [
+          "How is the real estate market in Delhi?",
+          "What is the market trend in Delhi?",
+          "Tell me something about real estate in Delhi."
+        ],
+        "responses": [
+          "The real estate market in Delhi is dynamic and influenced by factors such as demand, supply, government policies, and economic trends. It's advisable to stay updated on market trends and seek professional advice when making investment decisions."
+        ]
+      },
+      {
+        "tag": "first-time buyer",
+        "patterns": [
+          "Any advice for the first-time homebuyers in Delhi?",
+          "What to consider as a first-time buyer?",
+          "I am a first0time buyer.",
+          "I am scared to buy."
+        ],
+        "responses": [
+          "For first-time homebuyers in Delhi, it's essential to define your budget, research various localities, check property prices, get pre-approved for a loan, inspect properties thoroughly, and seek guidance from experienced real estate agents."
+        ]
+      }
+    ]
+  }
+  

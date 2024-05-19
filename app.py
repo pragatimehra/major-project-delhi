@@ -4,6 +4,8 @@ from sklearn.preprocessing import LabelEncoder
 from flask import Flask, render_template, request, jsonify
 import pickle
 
+from chat import get_response
+
 app = Flask(__name__, template_folder='/Users/pragatimehra/Desktop/Delhi/templates')
 data = pd.read_excel("Cleaned-Delhi-Prices.xlsx")
 model = pickle.load(open('model.pkl', 'rb'))
@@ -21,11 +23,17 @@ def get_property_dealers_with_contacts(location):
     ]
     return property_dealers
 
-
 @app.route('/')
 def index():
     locations = sorted(data['Location'].unique())
     return render_template('home.html', locations=locations)
+
+@app.route('/chat', methods=['POST'])
+def chat():
+    text = request.get_json().get("message")
+    response = get_response(text)
+    message = {"answer": response}
+    return jsonify(message)
 
 @app.route('/predict', methods=['POST'])
 def predict():
